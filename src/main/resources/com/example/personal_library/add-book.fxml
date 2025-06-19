@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #efdfbb;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.personal_library.AddBook">
+   <children>
+      <TextField fx:id="authorInput" layoutX="128.0" layoutY="105.0" />
+      <TextField fx:id="genreInput" layoutX="128.0" layoutY="146.0" />
+      <TextField fx:id="isbnInput" layoutX="128.0" layoutY="187.0" />
+      <TextField fx:id="yearInput" layoutX="128.0" layoutY="229.0" />
+      <TextField fx:id="titleInput" layoutX="128.0" layoutY="68.0" />
+      <CheckBox fx:id="readInput" layoutX="178.0" layoutY="273.0" mnemonicParsing="false" text="Read" />
+      <DatePicker fx:id="startDateInput" layoutX="115.0" layoutY="307.0" />
+      <DatePicker fx:id="endDateInput" layoutX="115.0" layoutY="347.0" />
+      <Button layoutX="488.0" layoutY="347.0" mnemonicParsing="false" onAction="#handleAddBook" style="-fx-background-color: #c19a6b;" text="Add Book" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Text fill="#987654" layoutX="28.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add a New Book">
+         <font>
+            <Font name="Britannic Bold" size="47.0" />
+         </font>
+      </Text>
+      <Text layoutX="42.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Title" />
+      <Text layoutX="50.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author" />
+      <Text layoutX="52.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Genre" />
+      <Text layoutX="35.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Release Year" />
+      <Text layoutX="41.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date" />
+      <Text layoutX="55.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ISBN" />
+      <Text layoutX="38.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Finish Date" />
+   </children>
+</AnchorPane>
